@@ -143,7 +143,7 @@
       */
 
       window.onload = function () {
-        alert("Hey! Whats Up");
+        alert("Hey! User:)");
       };
 
       /* EXERCISE 13
