@@ -58,7 +58,7 @@
 
     <div>
       <p>And this text is just for the exercise too!</p>
-      <h2 style="color: red">
+      <h2 style="color: green">
         Save this page on your computer and open it with VSCode to get the
         questions!
       </h2>
@@ -115,7 +115,7 @@
 
       const addToTheSecond = function (content) {
         let newListElement = document.createElement("li");
-        newListElement.innerText = "new item";
+        newListElement.innerText = "additional item";
         let parentNode = document.getElementById("secondList");
         parentNode.appendChild(newListElement);
       };
@@ -126,7 +126,7 @@
 
       const addParagraph = function (content) {
         let newParagraph = document.createElement("p");
-        newParagraph.innerText = "I am a 2nd paragraph to the 1st div";
+        newParagraph.innerText = "Now you can see new paragraph";
         let parentNode = document.getElementsByTagName("div");
         parentNode[0].appendChild(newParagraph);
         //
