@@ -9,7 +9,7 @@
   </head>
   <body>
     <div>
-      <h1>This is the title of the page</h1>
+      <h1 id="heading">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -50,7 +50,7 @@
         questions!
       </h2>
     </div>
-    <script src="answerday8.js">
+    <script>
       // /* EXERCISE 1
       //  Write a function for changing the title of the document in something else.
       // */
@@ -81,9 +81,12 @@
       //  Write a function for changing the href property of every link to https://www.google.com
       // */
 
-      // const changeUrls = function () {
-      //   //
-      // };
+      const changeUrls = function () {
+      let linkNodes = document.getElementsByTagName("a")
+      for (let linkNode of linkNodes) {
+        linkNode.href = "https://www.google.com/"
+      }
+
 
       // /* EXERCISE 5
       //  Write a function for adding a new list item in the second unordered list.
@@ -96,6 +99,14 @@
       // /* EXERCISE 6
       //  Write a function for adding a second paragraph to the first div.
       // */
+      const addParagraph = function (content) {
+      let newParagraph = document.createElement("p")
+      newParagraph.innerText = "I am a 2nd paragraph to the 1st div"
+      let parentNode = document.getElementsByTagName("div")
+      parentNode[0].appendChild(newParagraph)
+
+
+
 
       // const addParagraph = function (content) {
       //   //

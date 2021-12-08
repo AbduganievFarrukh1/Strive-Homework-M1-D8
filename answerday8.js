@@ -11,15 +11,24 @@
       */
 
       const addClassToTitle = function () {
-          document.querySelector("oldtitle").innerText ="myHeading";
+        document.querySelectorAll("h1");
+        addClassToTitle.h1 = "myHeading";
+        // let toChange = document.getElementById("heading")
+        // toChange.innerHTML = "myHeading"
+    };
+        
+        // document.querySelector("oldtitle").innerText ="myHeading";
         //
-      };
+      
 
       /* EXERCISE 3
        Write a function for changing the text of only the p which are children of a div.
       */
 
       const changePcontent = function () {
+        let changeUrlsNode = document.getElementsByTagName("a")
+        //for(i=0; i<changeUrlsNode;i++){
+          changeUrlsNode.href = "google.com"
         //
       };
 
