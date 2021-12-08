@@ -3,16 +3,15 @@
       */
 
        const changeTitle = function (newTitle) {
-        document.querySelector("title").innerText = "Changed!";
-        console.log("Hello");
-        //
-      };
+        document.querySelector("title").innerText = "Change!";
+      }
 
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
       */
 
       const addClassToTitle = function () {
+          document.querySelector("oldtitle").innerText ="myHeading";
         //
       };
 
