@@ -50,16 +50,15 @@
         questions!
       </h2>
     </div>
-    <script>
+    <script type="text/javascript">
       // /* EXERCISE 1
       //  Write a function for changing the title of the document in something else.
       // */
-
-      // const changeTitle = function (newTitle) {
-      //   document.querySelector("title").innerText = "Changed!";
+       const changeTitle = function (newTitle) {
+        document.querySelector("title").innerText = "Changed!";
       //   console.log("hello");
       //   //
-      // };
+       };
 
       // /* EXERCISE 2
       //  Write a function for changing the class of the title of the page in "myHeading".
@@ -85,8 +84,7 @@
       let linkNodes = document.getElementsByTagName("a")
       for (let linkNode of linkNodes) {
         linkNode.href = "https://www.google.com/"
-      }
-
+      };
 
       // /* EXERCISE 5
       //  Write a function for adding a new list item in the second unordered list.
@@ -99,18 +97,12 @@
       // /* EXERCISE 6
       //  Write a function for adding a second paragraph to the first div.
       // */
-      const addParagraph = function (content) {
-      let newParagraph = document.createElement("p")
-      newParagraph.innerText = "I am a 2nd paragraph to the 1st div"
-      let parentNode = document.getElementsByTagName("div")
-      parentNode[0].appendChild(newParagraph)
-
-
-
-
-      // const addParagraph = function (content) {
-      //   //
-      // };
+       const addParagraph = function (content) {
+       let newParagraph = document.createElement("p")
+       newParagraph.innerText = "I am a 2nd paragraph to the 1st div"
+       let parentNode = document.getElementsByTagName("div")
+       parentNode[0].appendChild(newParagraph)
+       };
 
       // /* EXERCISE 7
       //  Write a function for making the first unordered list disappear.
