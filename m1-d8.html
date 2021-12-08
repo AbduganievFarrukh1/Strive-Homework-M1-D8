@@ -169,7 +169,7 @@
       }
 
       const random255 = () => {
-        return Math.round(Math.random() * 255);
+        return Math.round(Math.random() * 256);
       };
 
       const generateRandomColor = function () {
@@ -193,7 +193,8 @@
       };
 
       function changeContent(e) {
-        e.target.innerText = "Hey, what are you doing,u just click the footer";
+        e.target.innerText =
+          "Hey, what are you doing here,u just click the footer";
       }
 
       changeFooterText(event);
